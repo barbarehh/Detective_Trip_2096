@@ -1,0 +1,246 @@
+[gd_scene load_steps=9 format=4 uid="uid://cw1d2qtsoc1mh"]
+
+[ext_resource type="Script" path="res://Scenes/computer_screen.gd" id="1_olcx8"]
+[ext_resource type="Texture2D" uid="uid://2cg4w11gbyyg" path="res://screen.jpg" id="1_sjivj"]
+[ext_resource type="Texture2D" uid="uid://hgwro1ehj1s0" path="res://adwdsxxxxz.png" id="2_jlpbw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_id1l3"]
+texture = ExtResource("2_jlpbw")
+0:2/0 = 0
+1:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_a5flj"]
+sources/1 = SubResource("TileSetAtlasSource_id1l3")
+
+[sub_resource type="FontFile" id="FontFile_yojb5"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_qknye"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+
+[sub_resource type="SystemFont" id="SystemFont_1rl47"]
+subpixel_positioning = 0
+
+[node name="Computer_screen" type="Node"]
+script = ExtResource("1_olcx8")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1113.0
+offset_bottom = 604.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_sjivj")
+expand_mode = 1
+
+[node name="news" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.125
+anchor_top = 3.15
+anchor_right = 4.125
+anchor_bottom = 3.15
+offset_left = 4.0
+offset_top = -18.0
+offset_right = 124.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(0.122257, 0.355306, 0.417941, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "სიახლე"
+
+[node name="Layer0" type="TileMapLayer" parent="Control"]
+texture_filter = 1
+use_parent_material = true
+position = Vector2(165, 125)
+tile_map_data = PackedByteArray("AAAJAAAAAQAGAAcAAAAKAAAAAQAGAAcAAAALAAAAAQAGAAcAAAAMAAAAAQAGAAcAAAANAAAAAQAGAAcAAAAOAAAAAQAGAAcAAAAPAAAAAQAGAAcAAAAQAAAAAQAGAAcAAAARAAAAAQAGAAcAAAASAAAAAQAGAAcAAAATAAAAAQAGAAcAAAAUAAAAAQAGAAcAAAAVAAAAAQAGAAcAAAAWAAAAAQAGAAcAAAAXAAAAAQAGAAcAAAAYAAAAAQAGAAcAAAAZAAAAAQAGAAcAAAAaAAAAAQAGAAcAAAAbAAAAAQAGAAcAAAAcAAAAAQAGAAcAAAAdAAAAAQAGAAcAAAAeAAAAAQAGAAcAAAAfAAAAAQAGAAcAAAAgAAAAAQAGAAcAAAAhAAAAAQAGAAcAAAAiAAAAAQAGAAcAAAAjAAAAAQAGAAcAAAAkAAAAAQAGAAcAAAAlAAAAAQAGAAcAAAAmAAAAAQAGAAcAAAAnAAAAAQAGAAcAAAAoAAAAAQAGAAcAAAApAAAAAQAGAAcAAAAqAAAAAQAGAAcAAAArAAAAAQAGAAcAAAAsAAAAAQAGAAcAAAAtAAAAAQAGAAcAAAAuAAAAAQAGAAcAAAAvAAAAAQAGAAcAAAAwAAAAAQAGAAcAAAAxAAAAAQAGAAcAAAAyAAAAAQAGAAcAAAAzAAAAAQAGAAcAAAA0AAAAAQAGAAcAAAA1AAAAAQAGAAcAAAA2AAAAAQAGAAcAAAA3AAAAAQAGAAcAAAD//wAAAQAHAAIAABD+/wAAAQAGAAcAAAAIAAAAAQAHAAIAAAD+/xQAAQAHAAUAAAD+/xMAAQAHAAUAAAD+/xIAAQAGAAYAAAD+/xEAAQAHAAUAAAD+/xAAAQAGAAYAAAD+/w8AAQAHAAUAAAD//xQAAQAHAAYAAAD//xMAAQAHAAUAAAD//w8AAQAHAAUAAAD//xAAAQAHAAUAAAD//xEAAQAHAAUAAAD//xIAAQAHAAUAAAAAABQAAQAHAAUAAAAAABMAAQAHAAUAAAAAABIAAQAGAAYAAAAAABEAAQAHAAUAAAAAABAAAQAGAAYAAAAAAA8AAQAHAAUAAAD+/w4AAQAHAAIAAAAAAA4AAQAHAAIAABD//w4AAQAHAAMAAAABABQAAQADAAQAAAABABMAAQADAAQAAAABABIAAQADAAQAAAABABEAAQADAAYAAAABABAAAQADAAQAAAABAA8AAQADAAYAAAABAA4AAQADAAQAAAABAA0AAQADAAYAAAABAAwAAQADAAQAAAABAAsAAQADAAYAAAABAAoAAQADAAQAAAABAAkAAQADAAYAAAABAAgAAQADAAQAAAACAAgAAQADAAQAAAADAAgAAQADAAQAAAADAAkAAQADAAYAAAADAAoAAQADAAYAAAADAAsAAQABAAIAAAADAAwAAQABAAQAAAADAA0AAQABAAIAAAADAA4AAQABAAQAAAADAA8AAQABAAIAAAADABAAAQABAAQAAAADABEAAQABAAIAAAADABIAAQABAAQAAAADABMAAQABAAIAAAADABQAAQABAAQAAAACABQAAQADAAYAAAACABMAAQADAAYAAAACABIAAQADAAQAAAACABEAAQADAAQAAAACAA4AAQADAAQAAAACAA8AAQADAAQAAAACABAAAQADAAQAAAACAAsAAQADAAQAAAACAAoAAQADAAQAAAACAAkAAQADAAQAAAACAAwAAQADAAQAAAACAA0AAQADAAQAAAABAAcAAQACAAMAAAACAAcAAQADAAMAAAADAAcAAQACAAMAABAEAAwAAQABAAQAAAAFAAwAAQABAAQAAAAFAA0AAQABAAIAAAAFAA4AAQABAAQAAAAFAA8AAQABAAIAAAAFABAAAQABAAQAAAAFABEAAQABAAIAAAAFABIAAQABAAQAAAAFABMAAQABAAIAAAAFABQAAQABAAQAAAAEABQAAQAAAAIAAAAEABMAAQABAAQAAAAEABIAAQABAAQAAAAEABEAAQABAAIAAAAEABAAAQABAAQAAAAEAA8AAQABAAIAAAAEAA4AAQABAAQAAAAEAA0AAQABAAIAAAAEAAsAAQABAAIAAAAFAAsAAQABAAIAAAAGABMAAQAFAAcAAAAHABMAAQAFAAcAAAAIABMAAQAFAAcAAAAJABMAAQAFAAcAAAAKABMAAQAFAAcAAAALABMAAQAFAAcAAAAMABMAAQAFAAcAAAANABMAAQAFAAcAAAAOABMAAQAFAAcAAAAPABMAAQAFAAcAAAAQABMAAQAFAAcAAAARABMAAQAFAAcAAAASABMAAQAFAAcAAAATABMAAQAFAAcAAAAUABMAAQAFAAcAAAAVABMAAQAFAAcAAAAWABMAAQAFAAcAAAAXABMAAQAFAAcAAAAYABMAAQAFAAcAAAAZABMAAQAFAAcAAAAaABMAAQAFAAcAAAAbABMAAQAFAAcAAAAcABMAAQAFAAcAAAAdABMAAQAFAAcAAAAeABMAAQAFAAcAAAAfABMAAQAFAAcAAAAgABMAAQAFAAcAAAAhABMAAQAFAAcAAAAiABMAAQAFAAcAAAAjABMAAQAFAAcAAAAkABMAAQAFAAcAAAAlABMAAQAFAAcAAAAmABMAAQAFAAcAAAAnABMAAQAFAAcAAAAoABMAAQAFAAcAAAApABMAAQAFAAcAAAAqABMAAQAFAAcAAAArABMAAQAFAAcAAAAsABMAAQAFAAcAAAAtABMAAQAFAAcAAAAuABMAAQAFAAcAAAAvABMAAQAFAAcAAAAwABMAAQAFAAMAABA=")
+tile_set = SubResource("TileSet_a5flj")
+
+[node name="satauri" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.8
+anchor_top = 3.95
+anchor_right = 7.8
+anchor_bottom = 3.95
+offset_top = -1.52588e-05
+offset_right = 559.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_yojb5")
+theme_override_font_sizes/font_size = 25
+text = "Medialy Corp-ის კიდევ ერთი ქველმოქმედება"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="satauri2" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 6.675
+anchor_top = 5.1
+anchor_right = 6.675
+anchor_bottom = 5.1
+offset_top = -1.52588e-05
+offset_right = 753.0
+offset_bottom = 179.0
+theme_override_colors/font_color = Color(0, 0, 0.901961, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_qknye")
+theme_override_font_sizes/font_size = 16
+text = "\"ქალაქ ვაილდ სითიში კვლავ გრძელდება მოსახლეობისთვის სასიკეთო ცვლილებები!!!
+Medialy-მა დააფინანსა ქარხნის მშენებლობა, რომელმაც დამატებითი
+სამუშაო ადგილები შექმნა და ეკონომიკა მნიშვნელოვნად გააძლიერა.
+ახალი ინიციატივები მიზნად ისახავს არა მხოლოდ ხალხის კეთილდღეობის გაუმჯობესებას, 
+არამედ ეკოლოგიური პრობლემების შემცირებასაც კი. 
+მოსახლეობამ დადებითად მიიღო ეს ცვლილებები და ყველა ერთად ვთანხმდებით, 
+რომ Medialy-ის წვლილი ქალაქის აწმყოსა და მომავლის გაუმჯობესებაში განუზომელია.\""
+vertical_alignment = 1
+max_lines_visible = 10
+
+[node name="news2" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 23.55
+anchor_top = 10.275
+anchor_right = 23.55
+anchor_bottom = 10.275
+offset_left = -6.10352e-05
+offset_top = -3.05176e-05
+offset_right = 120.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.4606, 0.120519, 0.418531, 1)
+theme_override_fonts/font = SubResource("SystemFont_1rl47")
+theme_override_font_sizes/font_size = 15
+text = "დღის ამბები"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quiz1" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 663.0
+offset_top = 394.0
+offset_right = 848.0
+offset_bottom = 448.0
+text = "Next
+"
+
+[connection signal="pressed" from="Control/Quiz1" to="." method="_on_quiz_1_pressed"]

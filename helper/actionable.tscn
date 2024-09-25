@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b158uenwogsnt"]
+
+[ext_resource type="Script" path="res://helper/actionable.gd" id="1_2wood"]
+
+[node name="Actionable" type="Area2D"]
+script = ExtResource("1_2wood")

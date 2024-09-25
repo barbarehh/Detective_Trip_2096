@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://bj3ijg6vofkwe"
+path="res://.godot/imported/qvizi_1.dialogue-48aaf6a4c2f57c43c26b5e52921a9b6e.tres"
+
+[deps]
+
+source_file="res://dialogue/qvizi_1.dialogue"
+dest_files=["res://.godot/imported/qvizi_1.dialogue-48aaf6a4c2f57c43c26b5e52921a9b6e.tres"]
+
+[params]
+
+defaults=true
